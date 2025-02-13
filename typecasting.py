@@ -1,5 +1,11 @@
 # explicit typecasting
 
+a="1"
+b="2"
+print(a+b)              #string concatenation
+print(int(a)+int(b))    #int addition
+
+
 string = "15"
 number = 7
 #sum = string + number     #throws an error because different datatype
