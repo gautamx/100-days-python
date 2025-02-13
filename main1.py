@@ -23,7 +23,9 @@ print(type(d))
 mouse=9
 cat1=mouse
 cat2="mouse"
+cat3="cat"
 print(cat1,cat2)
+print(cat3 + cat2)      # concatenate
 
 # int float complex string boolean list tuple dict
 
@@ -39,4 +41,8 @@ print(tuple1)
 dict1 = {"name":"Sakshi", "age":20, "canVote":True}
 print(dict1)
 
-# in python, everything is an object
+################################################################
+############################# in python, everything is an object
+################################################################
+
+print("\n")
