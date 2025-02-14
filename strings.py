@@ -57,3 +57,28 @@ print(pie[len(pie)-8:])
 alphabets = "ABCDE"
 for i in alphabets:
     print(i)
+
+
+#################################################
+# String Methods
+
+# upper() method converts a string to upper case
+str1 = "AbcDEfghIJ"
+print(str1.upper())
+
+# lower() method converts a string to lower case
+print(str1.lower())
+
+# strip() method removes any white spaces 
+# before and after the string
+str2 = "          Silver Spoon                     "
+print(str2.strip())
+
+# rstrip() removes any trailing characters
+str3 = "Hello#######"
+print(str3.rstrip("#"))
+
+# replace() method replaces all occurences 
+# of a string with another string
+str2 = "Silver Spoon"
+print(str2.replace("Sp", "M"))
