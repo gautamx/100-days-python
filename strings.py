@@ -1,3 +1,5 @@
+# STRINGS ARE IMMUTABLE
+
 name = "Gautam"
 print("Hello, " + name)
 
