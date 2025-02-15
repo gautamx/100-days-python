@@ -17,7 +17,7 @@ a.find("str")
 a.index("ishh")  - raises exception
 a.isalnum()
 a.isalpha()
-a.islower())
+a.islower()
 a.isprintable()
 a.isspace()
 a.istitle()
