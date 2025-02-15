@@ -155,6 +155,7 @@ print(str1.islower())
 
 # isprintable() method returns True if all the values within the given 
 # string are printable, if not, then return False
+# eg. \n is not a printable character
 str1 = "We wish you a Merry Christmas"
 print(str1.isprintable())
 
