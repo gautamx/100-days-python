@@ -52,6 +52,14 @@ print(animals[-8:-1:2])	#using negative indexes
 
 print(animals[1:8:3])
 
+print('\n')
+
+lst = [i*i for i in range(10)]
+print(lst)
+lst = [i*i for i in range(10) if i%2==0]
+print(lst)
+
+print('\n')
 
 ################################################
 # List Comprehension

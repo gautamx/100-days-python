@@ -52,7 +52,13 @@ print(animals[::2])         # print alternate values
 print(animals[-8:-1:2]) 
 print(animals[1:8:3])       # print every third value
 
+print('\n')
 
+# slicing
+animals2 = animals[1:6]
+print(animals2)
+
+print('\n')
 
 ###################################################################################
 # Manipulating Tuples
@@ -81,10 +87,13 @@ print(southEastAsia)
 # tuple.count()
 # returns the number of times the given element appears in the tuple
 tuple1 = (0, 1, 2, 3, 2, 3, 1, 3, 2)
-res = tuple1.count(3)
-print('Count of 3 in Tuple1 is:', res)
+res1 = tuple1.count(3)
+print('Count of 3 in Tuple1 is:', res1)
 
 # tuple.index()
 # returns the first occurrence of the given element from the tuple
-hres = tuple1.index(3)
-print('First occurrence of 3 is at index', hres)
+res2 = tuple1.index(3)
+print('First occurrence of 3 is at index', res2)
+
+# res3 = tuple1.index(3,2,1)
+# print(res3)
