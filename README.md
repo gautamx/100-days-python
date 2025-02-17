@@ -1,5 +1,4 @@
 # Strings are immutable
-
 **String Methods**
 a = "This is a string!"
 len(a)
@@ -24,3 +23,15 @@ a.istitle()
 a.startswith("This")
 a.swapcase()
 a.title()
+
+
+# Lists are mutable
+**List Methods**
+list.sort()
+list.reverse()
+list.index()
+list.count()
+list.copy()
+list.append()
+list.insert()
+list.extend()
