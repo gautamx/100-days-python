@@ -35,3 +35,9 @@ list.copy()
 list.append()
 list.insert()
 list.extend()
+
+
+# Tuples are immutable
+**Tuple Methods**
+tuple.count()
+tuple.index()

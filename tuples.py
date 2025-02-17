@@ -51,3 +51,40 @@ print(animals[:-3])
 print(animals[::2])         # print alternate values 
 print(animals[-8:-1:2]) 
 print(animals[1:8:3])       # print every third value
+
+
+
+###################################################################################
+# Manipulating Tuples
+# Tuples are immutable, hence if you want to add, remove or change tuple items, 
+# then first you must convert the tuple to a list. 
+# Then perform operation on that list and convert it back to tuple.
+countries = ("Spain", "Italy", "India", "England", "Germany")
+temp = list(countries)
+temp.append("Russia")       # add item
+temp.pop(3)                 # remove item "England"
+temp.insert(2, "Finland")   # insert item
+countries = tuple(temp)
+print(countries)
+
+# we can directly concatenate two tuples without converting them to list
+countries1 = ("Pakistan", "Afghanistan", "Bangladesh", "Sri Lanka")
+countries2 = ("Vietnam", "India", "China")
+southEastAsia = countries1 + countries2
+print(southEastAsia)
+
+
+####################################################################################
+# Tuple Methods
+# As tuple is immutable type of collection of elements it have limited built in methods
+
+# tuple.count()
+# returns the number of times the given element appears in the tuple
+tuple1 = (0, 1, 2, 3, 2, 3, 1, 3, 2)
+res = tuple1.count(3)
+print('Count of 3 in Tuple1 is:', res)
+
+# tuple.index()
+# returns the first occurrence of the given element from the tuple
+hres = tuple1.index(3)
+print('First occurrence of 3 is at index', hres)
