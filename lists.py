@@ -51,3 +51,24 @@ print(animals[::2])		#jumping indexes
 print(animals[-8:-1:2])	#using negative indexes
 
 print(animals[1:8:3])
+
+
+################################################
+# List Comprehension
+
+# List comprehensions are used for creating new lists 
+# from other iterables like lists, tuples, dictionaries, 
+# sets, and even in arrays and strings
+
+# List = [Expression(item) for item in iterable if Condition]
+# Expression: It is the item which is being iterated.
+# Iterable: It can be list, tuples, dictionaries, sets, and even in arrays and strings.
+# Condition: Condition checks if the item should be added to the new list or not.
+
+names = ["Milo", "Sarah", "Bruno", "Anastasia", "Rosa"]
+namesWith_O = [item for item in names if "o" in item]
+print(namesWith_O)
+
+names = ["Milo", "Sarah", "Bruno", "Anastasia", "Rosa"]
+namesWith_O = [itemy for itemy in names if (len(itemy) > 4)]
+print(namesWith_O)
