@@ -18,4 +18,4 @@ square(5)
 print(square.__doc__)
 
 # PEP 8
-import this
+# import this
