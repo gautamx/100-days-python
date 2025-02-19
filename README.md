@@ -50,3 +50,9 @@ set.remove()
 set.discard()
 set.pop()
 set.clear()
+
+**Dictionary Methods**
+dict.update()
+dict.clear()
+dict.pop()
+dict.popitem()
