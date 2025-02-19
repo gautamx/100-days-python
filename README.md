@@ -1,4 +1,4 @@
-# Strings are immutable
+
 **String Methods**
 a = "This is a string!"
 len(a)
@@ -25,7 +25,6 @@ a.swapcase()
 a.title()
 
 
-# Lists are mutable
 **List Methods**
 list.sort()
 list.reverse()
@@ -37,7 +36,17 @@ list.insert()
 list.extend()
 
 
-# Tuples are immutable
 **Tuple Methods**
 tuple.count()
 tuple.index()
+
+**Set Methods**
+set.isdisjoint()
+set.issuperset()
+set.issubset()
+set.add()
+set.update()
+set.remove()
+set.discard()
+set.pop()
+set.clear()

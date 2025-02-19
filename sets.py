@@ -110,3 +110,43 @@ cities = {"Tokyo", "Madrid", "Berlin", "Delhi"}
 cities2 = {"Helsinki", "Warsaw", "Seoul"}
 cities.update(cities2)
 print(cities)
+
+# remove()/discard()
+# to remove items form list
+cities = {"Tokyo", "Madrid", "Berlin", "Delhi"}
+cities.remove("Tokyo")
+print(cities)
+
+# if we try to delete an item which is not present in set, 
+# then remove() raises an error, whereas discard() does not raise any error
+# cities = {"Tokyo", "Madrid", "Berlin", "Delhi"}
+# cities.remove("Seoul")
+# print(cities)
+
+# pop()
+# removes the last item of the set 
+# but the catch is that we don’t know which item gets popped as sets are unordered
+cities = {"Tokyo", "Madrid", "Berlin", "Delhi"}
+item = cities.pop()     # if popped item is assigned to a variable
+print(cities)
+print(item)             # it can be accessed
+
+# del
+# del is not a method, rather it is a keyword which deletes the set entirely
+cities = {"Tokyo", "Madrid", "Berlin", "Delhi"}
+print(cities)
+del cities
+# print(cities)
+
+# clear()
+# clears all items in the set and prints an empty set
+cities = {"Tokyo", "Madrid", "Berlin", "Delhi"}
+cities.clear()
+print(cities)       # output --> set()
+
+# check if an item exists in the set or not
+info = {"Carla", 19, False, 5.9}
+if "Carla" in info:
+    print("Carla is present.")
+else:
+    print("Carla is absent.")
