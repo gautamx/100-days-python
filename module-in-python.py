@@ -26,3 +26,13 @@ print(m.sin(pi/2))
 
 # built-in function called dir that you can use to view the names of all the functions and variables defined in a module
 print(dir(math))        # outputs a list
+
+
+print('\n')
+######################################################
+# using a custom test module
+import testModule as tm
+print(dir(tm))
+
+tm.function()
+print(tm.string)
