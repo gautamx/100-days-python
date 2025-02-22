@@ -28,7 +28,7 @@ f.close()
 
 f = open("file2.txt", "a")
 
-f.write("\nTrue beauty is something that attacks, overpowers, robs, and finally destroys.\n")
+f.write("True beauty is something that attacks, overpowers, robs, and finally destroys.\n")
 
 f.close()
 
@@ -40,4 +40,50 @@ print(contents)
 
 # alternatively, use 'with' statement
 with open('file2.txt', 'a') as f:
-    f.write("\nBeauty is something that burns the hand when you touch it.\n")
+    f.write("Beauty is something that burns the hand when you touch it.\n")
+
+
+# readline()
+# readline() method reads a single line from the file. 
+# If we want to read multiple lines, we can use a loop.
+f = open('file2.txt', 'r')
+while True:
+    line = f.readline()
+    if not line:
+        break
+    print(line)
+
+# readlines() method reads all the lines of the file and returns them as a list of strings
+
+# writelines()
+# writelines() method in Python writes a sequence of strings to a file. 
+# The sequence can be any iterable object, such as a list or a tuple.
+# 
+# f = open('myfile.txt', 'w')
+# lines = ['line 1\n', 'line 2\n', 'line 3\n']
+# f.writelines(lines)
+# f.close()
+
+# writelines() method does not add newline characters between the strings in the sequence. 
+# If you want to add newlines between the strings, you can use a loop to write each string separately
+f = open('file2.txt', 'a')
+lines = ['Another eye', 'Another heart', 'Another life']
+for line in lines:
+    f.writelines(line + '\n')
+f.close()
+
+
+f = open('file3.txt', 'r')
+i=0
+while True:
+    i += 1
+    line = f.readline()
+    if not line:
+        break
+    m1 = int(line.split(',')[0])
+    m2 = int(line.split(',')[1])
+    m3 = int(line.split(',')[2])
+    print(f"Marks of student {i} in Maths is: {m1}")
+    print(f"Marks of student {i} in Physics is: {m2}")
+    print(f"Marks of student {i} in Chemistry is: {m3}")
+f.close()
