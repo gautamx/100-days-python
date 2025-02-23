@@ -18,7 +18,7 @@ cubed = map(lambda x : x**3, numbers)
 # typecast into list
 print(list(cubed))
 
-# same process using while loop
+# same process using for loop
 # # def cube(x):
 # #   return x * x * x
 
@@ -55,5 +55,5 @@ numbers = [1,2,3,4,5]
 
 from functools import reduce    # reduce function requires the functools module to be imported in order to use it
 
-sum = reduce(lambda x,y : x+y, numbers)
+sum = reduce(lambda x,y : x+y, numbers)     # reduces to single entry
 print(sum)
