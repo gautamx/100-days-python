@@ -60,7 +60,58 @@ b.age = 29
 
 # a attributes will have default/initial values
 # b attributes will have updated values
-
 a.desc()
-
 b.desc()
+
+
+######################################################################################################################################
+# CONSTRUCTOR
+# A constructor is a special method in a class used to create and initialize an object of a class. 
+# There are different types of constructors. 
+# A constructor is a unique function that gets called automatically when an object is created of a class. 
+# The main purpose of a constructor is to initialize or assign values to the data members of that class. 
+# It cannot return any value other than None.
+class animals:
+    # init is one of the reserved functions in Python. In OOP, it is known as a constructor.
+    # When the constructor accepts arguments along with self, it is known as parameterized constructor. Otherwise, default constructor.
+    def __init__(self, animal, group):
+        self.animal = animal            # passed arguments assigned to attributes
+        self.group = group
+
+a = animals('lion','mammal')            # passed arguments
+b = animals('crab','crustacean')
+
+print(a.animal,a.group)
+print(b.animal,b.group)
+
+
+class dummy:
+    # When the constructor doesn't accept any arguments from the object 
+    # and has only one argument, self, in the constructor, it is known as a default constructor.
+    def __init__(self):
+        print('This is a default contructor')
+    # don't have to pass args while creating objects
+obj1 = dummy()      # prints the statement in constructor
+
+
+# example
+class Person:
+
+    def __init__(self, name, occ):
+        # print('I am alive...')
+        self.name = name
+        self.occ = occ
+
+    def info(self):
+        print(f'I am {self.name} and I am a {self.occ}')
+
+a = Person('MK','Teacher')
+b = Person('SS','Analyst')
+
+a.info()
+b.info()
+
+a.name = 'Mo'
+print(a.name)
+a.occ = '<3'
+a.info()
