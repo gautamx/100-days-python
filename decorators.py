@@ -86,3 +86,27 @@ def sum(a,b,c):
 
 sum(1,2,3)
 # repeat(sum(4,5,6))
+
+
+
+# accessing function without decorator
+import functools
+
+def my_decorator(func):
+    @functools.wraps(func)  # This preserves the original function
+    def wrapper(*args, **kwargs):
+        print("Decorator logic here")
+        return func(*args, **kwargs)
+    return wrapper
+
+@my_decorator
+def my_function(x):
+    return x * 2
+
+# Call decorated version
+r1 = my_function(7)  # Prints "Decorator logic here" and returns 14
+print(r1)
+
+# Call original version
+r2 = my_function.__wrapped__(5)  # Just returns 10 without decorator logic
+print(r2)
