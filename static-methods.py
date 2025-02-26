@@ -1,5 +1,5 @@
-# Static methods in Python are methods that belong to a class rather than an instance of the class. 
-# They are defined using the @staticmethod decorator
+# Static methods don't operate on either instance or class. 
+# They're defined using the @staticmethod decorator and don't take self or cls parameters.
 # Static methods are often used to create utility functions that don't need access to instance data.
 class Math:
     @staticmethod
