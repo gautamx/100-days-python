@@ -40,6 +40,7 @@ e1 = Employee()
 e1.name = 'Avinash'
 e1.show()
 print(Employee.company)
+# print(e1.company)
 
 e1.changeCompany('Google')
 e1.show()
