@@ -20,8 +20,7 @@ class Circle(Shape):
 
     # method overriding
     def area(self):
-                # from Parent class
-        # above can be useful when you want to extend the behavior of the base class method, rather than replace it.
+        # can be useful when you want to extend the behavior of the base class method or replace it entirely.
         return math.pi * super().area()
 
 obj1 = Shape(5,7)
