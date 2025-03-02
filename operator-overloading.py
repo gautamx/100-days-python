@@ -51,7 +51,3 @@ print(v2)
 v3 = v1 + v2
 print(type(v3))
 print(v3)
-
-
-
-
